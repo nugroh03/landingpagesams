@@ -33,7 +33,7 @@ export default function Faq() {
                 <span>Do you offer technical support?</span>
                 <ChevronUpIcon
                   className={`${
-                    open ? 'transform rotate-180' : " you're free "
+                    open ? 'transform rotate-180' : ''
                   } w-5 h-5 text-white`}
                 />
               </Disclosure.Button>
