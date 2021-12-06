@@ -10,18 +10,7 @@ import Testimoni from '../components/organisms/testimoni';
 import WhatIsSAMS from '../components/organisms/whatiis';
 
 export default function Home() {
-  useEffect(() => {
-    $(document).ready(function () {
-      $('.mobile-menu-button').each(function (_, navToggler) {
-        var target = $(navToggler).data('target');
-        $(navToggler).on('click', function () {
-          $(target).animate({
-            height: 'toggle',
-          });
-        });
-      });
-    });
-  }, []);
+  useEffect(() => {}, []);
   return (
     <>
       <div>
