@@ -33,9 +33,9 @@ export default function Faq() {
                 <span>Do you offer technical support?</span>
                 <ChevronUpIcon
                   className={`${
-                    open ? 'transform rotate-180' : ''
+                    open ? 'transform rotate-180' : " you're free "
                   } w-5 h-5 text-white`}
-                ></ChevronUpIcon>
+                />
               </Disclosure.Button>
               <Disclosure.Panel className='px-4 pt-4 pb-2 text-sm text-gray-500'>
                 No.
