@@ -163,7 +163,7 @@ export default function Header() {
                     bg-green-500 hover:bg-opacity-30
                   '
                 >
-                  <span className='w-full text-base font-normal text-green-600'>
+                  <span className='w-full text-base font-normal text-monts text-semibold text-green-600'>
                     Sign In
                   </span>
                 </a>
