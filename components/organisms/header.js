@@ -1,3 +1,4 @@
+import Script from 'next/script';
 export default function Header() {
   return (
     <section className='h-auto font-monts '>
