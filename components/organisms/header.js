@@ -2,6 +2,21 @@ import Script from 'next/script';
 export default function Header() {
   return (
     <section className='h-auto font-monts '>
+      <Script
+        id='header'
+        onLoad={() => {
+          $(document).ready(function () {
+            $('.mobile-menu-button').each(function (_, navToggler) {
+              var target = $(navToggler).data('target');
+              $(navToggler).on('click', function () {
+                $(target).animate({
+                  height: 'toggle',
+                });
+              });
+            });
+          });
+        }}
+      />
       <nav className='px-4 pt-5 mx-auto max-w-screen-2xl lg:px-24 lg:pt-7'>
         <div
           className='
@@ -133,7 +148,7 @@ export default function Header() {
                     bg-green-500 hover:bg-opacity-30
                   '
                 >
-                  <span className='w-full text-base font-normal text-white'>
+                  <span className='w-full text-base font-normal text-green-600'>
                     Sign In
                   </span>
                 </a>
