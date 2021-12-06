@@ -1,6 +1,26 @@
 export default function Header() {
   return (
     <section className='h-auto font-monts '>
+      <Script
+        src='https://code.jquery.com/jquery-3.6.0.min.js'
+        integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4='
+        crossorigin='anonymous'
+      ></Script>
+      <Script>
+        {/* // Navbar toggling animation */}
+        $(document).ready(function (){' '}
+        {$(document).ready(function () {
+          $('.mobile-menu-button').each(function (_, navToggler) {
+            var target = $(navToggler).data('target');
+            $(navToggler).on('click', function () {
+              $(target).animate({
+                height: 'toggle',
+              });
+            });
+          });
+        })}
+        ;
+      </Script>
       <nav className='px-4 pt-5 mx-auto max-w-screen-2xl lg:px-24 lg:pt-7'>
         <div
           className='
