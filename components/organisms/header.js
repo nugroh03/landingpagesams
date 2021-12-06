@@ -3,11 +3,12 @@ export default function Header() {
   return (
     <section className='h-auto font-monts '>
       <Script
+        id='header'
         src='https://code.jquery.com/jquery-3.6.0.min.js'
         integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4='
         crossorigin='anonymous'
       ></Script>
-      <Script>
+      <Script id='header'>
         {/* // Navbar toggling animation */}
         $(document).ready(function (){' '}
         {$(document).ready(function () {
