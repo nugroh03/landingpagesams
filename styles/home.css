@@ -1,0 +1,42 @@
+/* Solution */
+
+.content-6-1 .text-gray-1 {
+  color: #444341;
+}
+
+.content-6-1 .text-gray-2 {
+  color: #82817f;
+}
+
+@media (min-width: 1024px) {
+  .content-6-1 .container-size {
+    padding: 80px 120px;
+  }
+
+  .content-6-1 .line {
+    width: 1px;
+    height: 454px;
+    background-color: #f2f1ec;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content-6-1.container-size {
+    padding: 80px 200px;
+  }
+}
+
+@media (min-width: 1367px) {
+  .content-6-1.container-size {
+    padding: 80px 297px;
+  }
+}
+
+@media (min-width: 640px) {
+  .footer-3-1 {
+    background-image: url('http://api.elements.buildwithangga.com/storage/files/2/assets/Footer/Footer3/Footer-3-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
