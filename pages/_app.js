@@ -1,7 +1,6 @@
 import 'tailwindcss/tailwind.css';
 import '../styles/home.css';
 import Head from 'next/head';
-import Script from 'next/script';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -14,6 +13,12 @@ function MyApp({ Component, pageProps }) {
           rel='stylesheet'
         />
       </Head>
+      <Script
+        id='header'
+        src='https://code.jquery.com/jquery-3.6.0.min.js'
+        integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4='
+        crossorigin='anonymous'
+      ></Script>
 
       <Component {...pageProps} />
     </>

@@ -4,6 +4,8 @@ export default function Header() {
     <section className='h-auto font-monts '>
       <Script
         id='header'
+        src='https://code.jquery.com/jquery-3.6.0.min.js'
+        integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4='
         onLoad={() => {
           $(document).ready(function () {
             $('.mobile-menu-button').each(function (_, navToggler) {
@@ -61,11 +63,11 @@ export default function Header() {
               >
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
-                  className='text-white w-7 h-7'
+                  className='text-blue-500 w-7 h-7'
                   x-show='!showMenu'
                   fill='none'
                   viewBox='0 0 24 24'
-                  stroke='currentColor'
+                  stroke='#E5D4FF'
                 >
                   <path
                     strokeLinecap='round'
