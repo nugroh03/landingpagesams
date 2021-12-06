@@ -14,13 +14,25 @@ function MyApp({ Component, pageProps }) {
           rel='stylesheet'
         />
       </Head>
+      <Script
+        src='https://code.jquery.com/jquery-3.6.0.min.js'
+        integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4='
+        crossorigin='anonymous'
+      ></Script>
       <Script>
-        <script
-          id='header'
-          src='https://code.jquery.com/jquery-3.6.0.min.js'
-          integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4='
-          crossOrigin='anonymous'
-        ></script>
+        {/* // Navbar toggling animation */}
+        $(document).ready(function (){' '}
+        {$(document).ready(function () {
+          $('.mobile-menu-button').each(function (_, navToggler) {
+            var target = $(navToggler).data('target');
+            $(navToggler).on('click', function () {
+              $(target).animate({
+                height: 'toggle',
+              });
+            });
+          });
+        })}
+        ;
       </Script>
       <Component {...pageProps} />
     </>
