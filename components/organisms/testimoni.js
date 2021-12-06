@@ -1,6 +1,7 @@
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import { render } from 'react-dom';
+import Image from 'next/image';
 
 export default function Testimoni() {
   return (
@@ -33,7 +34,7 @@ export default function Testimoni() {
             </p>
             <div className='flex items-center justify-center mt-8'>
               <a href='#' className='block relative'>
-                <img
+                <Image
                   alt='profil'
                   src='/profile.jpg'
                   className=' object-cover rounded-full h-10 w-10 '
@@ -60,7 +61,7 @@ export default function Testimoni() {
             </p>
             <div className='flex items-center justify-center mt-8'>
               <a href='#' className='block relative'>
-                <img
+                <Image
                   alt='profil'
                   src='/profile.jpg'
                   className=' object-cover rounded-full h-10 w-10 '
@@ -87,7 +88,7 @@ export default function Testimoni() {
             </p>
             <div className='flex items-center justify-center mt-8'>
               <a href='#' className='block relative'>
-                <img
+                <Image
                   alt='profil'
                   src='/profile.jpg'
                   className=' object-cover rounded-full h-10 w-10 '
