@@ -10,7 +10,6 @@ import Testimoni from '../components/organisms/testimoni';
 import WhatIsSAMS from '../components/organisms/whatiis';
 
 export default function Home() {
-  useEffect(() => {}, []);
   return (
     <>
       <div>
