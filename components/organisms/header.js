@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 export default function Header() {
   return (
     <section className='h-auto font-monts '>
@@ -26,7 +24,7 @@ export default function Header() {
                 '
             >
               <a href='#' className='block relative'>
-                <Image
+                <img
                   alt='profil'
                   src='/logoSAMS-nobg.png'
                   className=' h-12 w-12 '
@@ -310,11 +308,7 @@ export default function Header() {
           </div>
           <div className='md:col-span-12 lg:col-span-6'>
             <div className='flex w-full lg:justify-end'>
-              <Image
-                src='/Image_header.png'
-                alt='GetShayna'
-                className='w-11/12'
-              />
+              <img src='/img_header.png' alt='GetShayna' className='w-11/12' />
             </div>
           </div>
         </div>

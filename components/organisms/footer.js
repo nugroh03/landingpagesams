@@ -1,14 +1,14 @@
-import Image from 'next/image';
-
 export default function Footer() {
   return (
     <section>
       <footer className='footer-3-1 h-full py-24 lg:px-32 md:px-16 sm:px-8 px-4'>
         <div className='flex lg:flex-row flex-col mb-20'>
           <div className='lg:w-1/2 w-full lg:mb-0 mb-10'>
-            <Image>
-              alt='profil' src='/logoSAMS-nobg.png' className=' h-12 w-12 '
-            </Image>
+            <img
+              alt='profil'
+              src='/logoSAMS-nobg.png'
+              className=' h-12 w-12 '
+            />
             <h5 className='text-sm leading-6 mt-5'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               <br className='sm:block hidden' /> Viverra fermentum euismod erat
