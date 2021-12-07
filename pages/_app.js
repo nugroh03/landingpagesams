@@ -1,5 +1,6 @@
 import 'tailwindcss/tailwind.css';
 import '../styles/home.css';
+import '../styles/sign_up.css';
 import Head from 'next/head';
 import script from 'next/script';
 
