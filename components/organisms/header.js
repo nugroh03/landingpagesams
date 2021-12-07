@@ -1,5 +1,6 @@
 import Script from 'next/script';
 import { useEffect } from 'react';
+import Link from 'next/link';
 export default function Header() {
   useEffect(() => {
     $(function () {
@@ -167,26 +168,28 @@ export default function Header() {
                     Sign In
                   </span>
                 </a>
-                <a
-                  href='#'
-                  className='
-                    flex
-                    px-5
-                    py-3
-                    text-center
-                    transition
-                    duration-200
-                    ease-out
-                    bg-white
-                    rounded-lg
-                    lg:mx-auto
-                    hover:bg-white hover:bg-opacity-90
-                  '
-                >
-                  <span className='w-full text-base font-semibold text-blue-800'>
-                    Sign Up
-                  </span>
-                </a>
+                <Link href="/sign-up">
+                  <a
+                    href="#"
+                    className='
+                      flex
+                      px-5
+                      py-3
+                      text-center
+                      transition
+                      duration-200
+                      ease-out
+                      bg-white
+                      rounded-lg
+                      lg:mx-auto
+                      hover:bg-white hover:bg-opacity-90
+                    '
+                  >
+                    <span className='w-full text-base font-semibold text-blue-800'>
+                      Sign Up
+                    </span>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
