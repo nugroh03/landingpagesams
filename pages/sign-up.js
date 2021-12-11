@@ -12,20 +12,20 @@ export default function SignUp() {
     axios.post("http://abcdprojects.com:7771/register_sams", {
       name: event.target.name.value,
       email: event.target.email.value,
-      city: event.target.email.value,
-      phone: event.target.email.value,
-      password: event.target.email.value,
-      jabatan: event.target.email.value,
+      city: event.target.kota.value,
+      phone: event.target.telephon.value,
+      password: event.target.password.value,
+      jabatan: event.target.jabatan.value,
+      school: event.target.sekolah.value,
     })
     .then(function (response) {
-      //setIsLoading(false);
+     
       if(response){
           console.log(response);
-          //SweetAlert.fire('Info','Data tersimpan.');
-          //fetchUsers();
+          window.location.href = "http://abcdprojects.com/sams/login/";
       } else{
         console.log('error');
-          //SweetAlert.fire('Info','Data gagal tersimpan.');
+     
       }
     })
     .catch(function (error) {
@@ -88,9 +88,9 @@ export default function SignUp() {
                         type='text'
                         name='name'
                         id=''
-                        placeholder='Your Email Address'
+                        placeholder='Isi Nama Lengkap'
                         className='w-full focus:outline-none text-base font-light bg-medium-white'
-                        autoComplete
+                      
                         required
                       />
                     </div>
@@ -121,7 +121,7 @@ export default function SignUp() {
                         id=''
                         placeholder='Your Email Address'
                         className='w-full focus:outline-none text-base font-light bg-medium-white'
-                        autoComplete
+                  
                         required
                       />
                     </div>
@@ -147,12 +147,12 @@ export default function SignUp() {
                         />
                       </svg>
                       <input
-                        type='email'
-                        name=''
+                        type='text'
+                        name='jabatan'
                         id=''
-                        placeholder='Your Email Address'
+                        placeholder='Isi Jabatan'
                         className='w-full focus:outline-none text-base font-light bg-medium-white'
-                        autoComplete
+                      
                         required
                       />
                     </div>
@@ -178,12 +178,12 @@ export default function SignUp() {
                         />
                       </svg>
                       <input
-                        type='email'
-                        name=''
+                        type='text'
+                        name='telephon'
                         id=''
-                        placeholder='Your Email Address'
+                        placeholder='Your Telephone Number'
                         className='w-full focus:outline-none text-base font-light bg-medium-white'
-                        autoComplete
+                    
                         required
                       />
                     </div>
@@ -209,12 +209,12 @@ export default function SignUp() {
                         />
                       </svg>
                       <input
-                        type='email'
-                        name=''
+                        type='text'
+                        name='kota'
                         id=''
-                        placeholder='Your Email Address'
+                        placeholder='Kota'
                         className='w-full focus:outline-none text-base font-light bg-medium-white'
-                        autoComplete
+                   
                         required
                       />
                     </div>
@@ -240,12 +240,12 @@ export default function SignUp() {
                         />
                       </svg>
                       <input
-                        type='email'
-                        name=''
+                        type='text'
+                        name='sekolah'
                         id=''
-                        placeholder='Your Email Address'
+                        placeholder='Nama Sekolah / Instansi '
                         className='w-full focus:outline-none text-base font-light bg-medium-white'
-                        autoComplete
+                  
                         required
                       />
                     </div>
@@ -272,7 +272,7 @@ export default function SignUp() {
                       </svg>
                       <input
                         type={show?'text':'password'}
-                        name=''
+                        name='password'
                         id='password-content-3-5'
                         placeholder='Your Password'
                         minLength='6'
@@ -298,24 +298,19 @@ export default function SignUp() {
                       </div>
                     </div>
                   </div>
-                  <div className='mt-3 text-right'>
-                    <a href='#' className='forgot-password text-sm italic'>
-                      Forgot Password?
-                    </a>
-                  </div>
                   <button
                     type='submit'
                     className='btn-fill block w-full px-4 py-3 mt-9 font-medium text-xl text-white transition duration-500 ease-in-out transform rounded-xl hover:bg-gray-800 hover:to-black focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2'
                   >
-                    Log In To My Account
+                    Register Now
                   </button>
                 </form>
-                <p className='mt-8 text-center text-sm text-foot'>
+                {/* <p className='mt-8 text-center text-sm text-foot'>
                   Don't have an account yet?
                   <a href='#' className='font-medium hover:underline text-link'>
                     Register Here
                   </a>
-                </p>
+                </p> */}
               </div>
             </div>
           </div>

@@ -2,11 +2,15 @@ import 'tailwindcss/tailwind.css';
 import '../styles/home.css';
 import '../styles/sign_up.css';
 import Head from 'next/head';
-import script from 'next/script';
+import {
+  RecoilRoot,
+} from 'recoil';
+
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
+    <RecoilRoot>
       <Head>
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' />
@@ -22,6 +26,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <Component {...pageProps} />
+      </RecoilRoot>
     </>
   );
 }
