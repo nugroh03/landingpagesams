@@ -18,7 +18,7 @@ export default function SuccessPage() {
               <p className='text-gray-600 mb-16 tracking-wide leading-7'>
                 Silahkan masuk ke halaman demo, dan login menggunakan email dan
                 password yang telah di daftarkan!
-                <br className='sm:block hidden' /> Happy Enjoy
+                <br className='sm:block hidden' /> Happy Enjoyed
               </p>
               <div className='flex justify-center'>
                 <Link href='http://abcdprojects.com/sams/login/'>
